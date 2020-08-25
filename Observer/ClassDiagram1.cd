@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="class Program&#xD;&#xA;{&#xD;&#xA;    static void Main(string[] args)&#xD;&#xA;    {&#xD;&#xA;        Stock stock = new Stock();&#xD;&#xA;        Bank bank = new Bank(&quot;ЮнитБанк&quot;, stock);&#xD;&#xA;        Broker broker = new Broker(&quot;Иван Иваныч&quot;, stock);&#xD;&#xA;        // имитация торгов&#xD;&#xA;        stock.Market();&#xD;&#xA;        // брокер прекращает наблюдать за торгами&#xD;&#xA;        broker.StopTrade();&#xD;&#xA;        // имитация торгов&#xD;&#xA;        stock.Market();&#xD;&#xA;         Console.Read();&#xD;&#xA;    }&#xD;&#xA;}">
+    <Position X="8.385" Y="0.5" Height="2.677" Width="3.377" />
+  </Comment>
+  <Comment CommentText="Слушатель,&#xD;&#xA;Наблюдатель">
+    <Position X="7.75" Y="5" Height="0.479" Width="1.012" />
+  </Comment>
+  <Class Name="Observer.Bank" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bank.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.112" />
+  </Class>
+  <Class Name="Observer.Broker" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Broker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="2.352" />
+  </Class>
+  <Class Name="Observer.Program">
+    <Position X="9" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Observer.Stock" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAAAgAAAAAAAAAAQAAAAAAIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Stock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="Observer.StockInfo">
+    <Position X="11.25" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>StockInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Observer.IObservable">
+    <Position X="10.75" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Observer.IObserver">
+    <Position X="7" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

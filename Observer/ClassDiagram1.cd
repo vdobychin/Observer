@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Comment CommentText="class Program&#xD;&#xA;{&#xD;&#xA;    static void Main(string[] args)&#xD;&#xA;    {&#xD;&#xA;        Stock stock = new Stock();&#xD;&#xA;        Bank bank = new Bank(&quot;ЮнитБанк&quot;, stock);&#xD;&#xA;        Broker broker = new Broker(&quot;Иван Иваныч&quot;, stock);&#xD;&#xA;        // имитация торгов&#xD;&#xA;        stock.Market();&#xD;&#xA;        // брокер прекращает наблюдать за торгами&#xD;&#xA;        broker.StopTrade();&#xD;&#xA;        // имитация торгов&#xD;&#xA;        stock.Market();&#xD;&#xA;         Console.Read();&#xD;&#xA;    }&#xD;&#xA;}">
-    <Position X="8.385" Y="0.5" Height="2.677" Width="3.377" />
+    <Position X="5.583" Y="2.208" Height="2.677" Width="3.377" />
   </Comment>
   <Comment CommentText="Слушатель,&#xD;&#xA;Наблюдатель">
     <Position X="7.75" Y="5" Height="0.479" Width="1.012" />
